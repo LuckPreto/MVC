@@ -1,0 +1,16 @@
+<?php
+require_once '../Database/conexao.php';
+
+class Usuario {
+    public function cadastrar($dados) {
+        $conn = conectar();
+        $stmt = $conn->prepare("INSERT INTO usuarios (nome, email) VALUES (?, ?)");
+        $stmt->execute([$dados['nome'], $dados['email']]);
+    }
+
+    public function listarTodos() {
+        $conn = conectar();
+        $stmt = $conn->query("SELECT * FROM usuarios");
+        return $stmt->fetchAll();
+    }
+}
