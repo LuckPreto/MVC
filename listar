@@ -1,0 +1,11 @@
+<?php
+require_once '../Controller/UsuarioController.php';
+$controller = new UsuarioController();
+$usuarios = $controller->listar();
+?>
+
+<ul>
+<?php foreach ($usuarios as $usuario): ?>
+    <li><?= $usuario['nome'] ?> - <?= $usuario['email'] ?></li>
+<?php endforeach; ?>
+</ul>
