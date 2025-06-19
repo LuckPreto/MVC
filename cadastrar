@@ -1,0 +1,5 @@
+<form action="../Controller/UsuarioController.php" method="POST">
+    <input type="text" name="nome" placeholder="Nome">
+    <input type="email" name="email" placeholder="Email">
+    <button type="submit" name="acao" value="cadastrar">Cadastrar</button>
+</form>
