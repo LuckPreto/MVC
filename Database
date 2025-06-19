@@ -1,0 +1,4 @@
+<?php
+function conectar() {
+    return new PDO("mysql:host=localhost;dbname=meubanco", "usuario", "senha");
+}
