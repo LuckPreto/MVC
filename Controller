@@ -1,0 +1,15 @@
+<?php
+require_once '../Model/Usuario.php';
+
+class UsuarioController {
+    public function cadastrar($dados) {
+        $usuario = new Usuario();
+        $usuario->cadastrar($dados);
+        header("Location: ../View/listar.php");
+    }
+
+    public function listar() {
+        $usuario = new Usuario();
+        return $usuario->listarTodos();
+    }
+}
