@@ -1,0 +1,26 @@
+/App
+│
+├── /Controller
+│   └── UsuarioController.php
+│
+├── /Model
+│   └── Usuario.php
+│
+├── /View
+│   ├── cadastrar.php
+│   ├── listar.php
+│   └── editar.php
+│
+├── /Config
+│   └── config.php
+│
+├── /Core
+│   ├── Controller.php
+│   └── App.php
+│
+├── /Public
+│   ├── index.php
+│   └── style.css
+│
+└── /Database
+    └── conexao.php
